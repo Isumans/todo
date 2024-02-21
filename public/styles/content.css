@@ -1,0 +1,231 @@
+html,
+body {
+  min-height: 100vh;
+  background-color: #FFF6E9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+footer {
+    margin-top: auto;
+  }
+h2,h3{
+    text-align: center;
+}  
+p{
+    padding: 0px 15px;
+    font-family: sans-serif;
+}
+.about-content{
+    margin-bottom: 75px;
+}
+.aboutH{
+    color: #0d8392;
+    font-size: 3rem;
+    
+}
+.aboutH2{
+    color: #40A2E3;
+}
+form{
+    margin-top: 50px;
+    padding: 0 65px;
+}
+.feedback-input {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #0d8392;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    
+  }
+  
+  .feedback-input:focus {
+    border: 2px solid #3586ff;
+  }
+textarea{
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+[type="submit"] {
+    width: 100%;
+    background: #0d8392;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+  }
+  [type="submit"]:hover {
+    background: #3586ff;
+  }
+  .item{
+    size:25%;
+  }
+  .start1{
+    text-align: center;
+    font-size: 3.25rem;
+    color: #40A2E3;
+  }
+  #calendar {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+}
+
+@media (max-width: 1400px) {
+    #calendar #calendar-date {
+        border-radius: 16px;
+        gap: 8px;
+        height: 632px;
+        padding: 16px;
+        width: 888px;
+    }
+
+    #calendar #calendar-date .date-wrapper {
+        border-radius: 16px;
+        gap: 8px;
+        height: 120px;
+        padding: 8px;
+        width: 120px;
+    }
+
+    #calendar #calendar-date .date-wrapper.active-month:hover,
+    #calendar #calendar-date .date-wrapper.active-month:focus {
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+
+    #calendar #calendar-date .date-wrapper .date {
+        border-radius: 12px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-day {
+        display: inline-flex;
+        gap: 3px;
+        margin: 8px;
+        padding: 3px 9px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-day .date-day-of-month {
+        font-size: 1em;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-day .date-day-of-week {
+        font-size: 0.7em;
+        margin-top: 0px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-title {
+        gap: 8px;
+        padding: 8px;
+        padding-top: 4px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-title .date-title-dot {
+        border-radius: 4px;
+        height: 4px;
+        margin-top: 4px;
+        width: 4px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-title h2 {
+        font-size: 0.9em;
+    }
+
+    #calendar #calendar-date .date-wrapper .active-day-indicator {
+        margin: 0px 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 1000px) {
+    #calendar {
+        overflow: auto;
+    }
+
+    #calendar::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    #calendar #calendar-date {
+        height: auto;
+        left: 0px;
+        margin: 10px auto;
+        padding: 16px;
+        position: relative;
+        top: 0px;
+        transform: none;
+        transition: none;
+        width: calc(100% - 54px);
+    }
+
+    #calendar #calendar-date .date-wrapper {
+        width: 100%;
+    }
+
+    #calendar #calendar-date .date-wrapper .active-day-indicator {
+        margin: 0px 40px;
+        width: calc(100% - 80px);
+    }
+}
+
+@media (max-width: 1000px),
+(min-width: 1401px) {
+    #calendar #calendar-date .date-wrapper {
+        border-radius: 26px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date {
+        border-radius: 20px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-day {
+        gap: 5px;
+        margin: 10px;
+        padding: 4px 12px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-day .date-day-of-month {
+        font-size: 1.1em;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-day .date-day-of-week {
+        font-size: 0.8em;
+        margin-top: 2px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-title {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-title .date-title-dot {
+        border-radius: 5px;
+        height: 5px;
+        margin-top: 5px;
+        width: 5px;
+    }
+
+    #calendar #calendar-date .date-wrapper .date .date-title h2 {
+        font-size: 1em;
+    }
