@@ -2,6 +2,12 @@
 #FFF6E9
 #BBE2EC
 #0D9276
+
+
+#211951
+#836FFF
+#15F5BA
+#F0F3FF
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"); */
 
 * {
@@ -23,7 +29,7 @@ i {
   font-size: 3rem;
 }
 .navbar-mainbg {
-  background-color: #20879f;
+  background-color: #211951;
   padding: 0px;
 }
 #navbarSupportedContent {
@@ -181,7 +187,7 @@ i {
 footer {
   position: relative;
   width: 100%;
-  background: #20879f;
+  background: #211951;
   min-height: 100px;
   padding: 1px 5px;
   display: flex;
@@ -214,7 +220,7 @@ footer .social_icon li a {
 }
 footer .social_icon li a:hover {
   transform: translateY(-15px);
-  color: blue;
+  color:#F0F3FF ;
 }
 
 footer .menu li a {
@@ -228,7 +234,7 @@ footer .menu li a {
 }
 footer .menu li a:hover {
   opacity: 1;
-  color: #fff;
+  color: #F0F3FF;
 }
 p {
   color: whtie;
@@ -241,7 +247,7 @@ p {
 .copyright {
   color: white;
 }
-footer .wave {
+/* footer .wave {
     position:absolute;
     top: -100px;
     left: 0;
@@ -249,11 +255,12 @@ footer .wave {
     height: 100px;
     /* background: url(https://i.ibb.co/rZt4Nhg/wave.png); */
     /* background: url(https://www.winterwind.com/images/tutorials/wave.png); */
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg); 
-    background-size: 1000px 100px;
-  }
+    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);  */
+    /* background: url(https://www.pngkit.com/view/u2w7a9r5i1r5a9e6_footer-wave-blue-page-divider-png/); */
+    /* background-size: 1000px 100px;
+  } */
   
-  footer .wave#wave1 {
+  /* footer .wave#wave1 {
     z-index: 1000;
     opacity: 1;
     bottom: 0;
@@ -296,5 +303,5 @@ footer .wave {
     100% {
       background-position-x: 1000px;
     }
-  }
-  
+  } */
+   */
